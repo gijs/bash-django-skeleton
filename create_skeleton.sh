@@ -48,7 +48,7 @@ then
 echo "try:
 \tfrom local_settings import *
 except ImportError, exp:
-\tpass" > settings.py
+\tpass" >> settings.py
 fi
 echo "....Done!"
 
