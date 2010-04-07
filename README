@@ -1,0 +1,18 @@
+Just place the file 'create_skeleton.sh' in the root of your Django project.
+Give it execute privileges and run it.
+
+It will create the following files:
+db/ <-- For SQLite database in case of easy local development. Gets 755 permissions.
+templates/404.html <-- Default 404 placeholder
+templates/500.html <-- Default 500 placeholder
+templates/base.html <-- The base template, including doctype and most basic blocks
+site_media/css/global.css <-- Placeholder for custom styles
+site_media/js/global.js <-- Placeholder for custom javascript
+site_media/images/ <-- Images directory
+fabfily.py <-- Basic Fabric file, doesn't do much yet
+README.txt <-- Project README and TODO file
+local_settings.py <-- If this gets imported, it means running localhost, thus DEBUG will be True (it's usually in .gitignore
+
+If settings.py exists, the import statement for local_settings.py will be appended.
+
+Feel free to use/adapt/ignore this file.
