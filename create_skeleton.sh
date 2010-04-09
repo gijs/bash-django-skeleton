@@ -21,6 +21,7 @@ touch site_media/js/global.js
 echo "/* JAVASCRIPT GOES HERE */" > site_media/js/global.js
 
 mkdir -p site_media/images/
+mkdir fixtures/
 
 touch fabfile.py
 echo "from fabric.api import run\n\ndef host_type():\n\trun('uname -s')" > fabfile.py
