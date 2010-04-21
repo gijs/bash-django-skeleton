@@ -15,7 +15,6 @@ mkdir -p site_media/css/
 touch site_media/css/global.css
 echo "/* CSS GOES HERE */" > site_media/css/global.css
 
-
 mkdir -p site_media/js/
 touch site_media/js/global.js
 echo "/* JAVASCRIPT GOES HERE */" > site_media/js/global.js
