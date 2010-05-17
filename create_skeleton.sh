@@ -22,6 +22,10 @@ echo "/* JAVASCRIPT GOES HERE */" > site_media/js/global.js
 
 mkdir -p site_media/images/
 
+touch requirements.txt
+echo "# Enter your required Python libraries here and execute this file from the root" > requirements.txt
+echo "# of your virtualenv like so: pip -E . install -r PROJECTNAME/requirements.txt" >> requirements.txt
+
 touch fabfile.py
 echo "from fabric.api import run\n\ndef host_type():\n\trun('uname -s')" > fabfile.py
 
