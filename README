@@ -16,3 +16,5 @@ local_settings.py <-- If this gets imported, it means running localhost, thus DE
 If settings.py exists, the import statement for local_settings.py will be appended.
 
 Feel free to use/adapt/ignore this file.
+
+..........
