@@ -27,7 +27,13 @@ echo "# Enter your required Python libraries here and execute this file from the
 echo "# of your virtualenv like so: pip -E . install -r PROJECTNAME/requirements.txt" >> requirements.txt
 
 cat <<EOF > fabfile.py
-from fabric.api import run
+from fabric.api import run, local
+
+PORT = 8000
+
+
+def rs():
+    local('./manage.py runserver %d' % PORT, capture=False)
 
 
 def host_type():
