@@ -26,8 +26,13 @@ touch requirements.txt
 echo "# Enter your required Python libraries here and execute this file from the root" > requirements.txt
 echo "# of your virtualenv like so: pip -E . install -r PROJECTNAME/requirements.txt" >> requirements.txt
 
-touch fabfile.py
-echo "from fabric.api import run\n\ndef host_type():\n\trun('uname -s')" > fabfile.py
+cat <<EOF > fabfile.py
+from fabric.api import run
+
+
+def host_type():
+    run('uname -s')
+EOF
 
 touch README.txt
 echo "\n\tREADME\n\t-------------------------\n\n\n\tTASKS\n\t-------------------------
