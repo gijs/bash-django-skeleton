@@ -9,7 +9,7 @@ templates/base.html <-- The base template, including doctype and most basic bloc
 site_media/css/global.css <-- Placeholder for custom styles
 site_media/js/global.js <-- Placeholder for custom javascript
 site_media/images/ <-- Images directory
-fabfily.py <-- Basic Fabric file, doesn't do much yet
+fabfile.py <-- Basic Fabric file, doesn't do much yet
 README.txt <-- Project README and TODO file
 local_settings.py <-- If this gets imported, it means running localhost, thus DEBUG will be True (it's usually in .gitignore
 
